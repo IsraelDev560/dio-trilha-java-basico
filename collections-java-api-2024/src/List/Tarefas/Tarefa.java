@@ -1,4 +1,4 @@
-package ListaDeTarefas;
+package List.Tarefas;
 public class Tarefa {
    //atributo
     private String descricao;

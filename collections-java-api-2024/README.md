@@ -28,8 +28,8 @@
 Exercícios:
 
 1. Operações Básicas com List
-2. Pesquisa em List
-3. Ordenação nas List
+2. List.Pesquisa em List
+3. List.ListaDeTarefas.Ordenação nas List
 
 ## Operações Básicas com List
 
@@ -44,7 +44,7 @@ Exercícios:
 
 ### 2. Carrinho de Compras:
 
-<p>Crie uma classe chamada "CarrinhoDeCompras" que representa um carrinho de compras online. O carrinho deve ser implementado como uma lista de itens. Cada item é representado por uma classe chamada "Item" que possui atributos como nome, preço e quantidade. Implemente os seguintes métodos:
+<p>Crie uma classe chamada "List.ListaDeTarefas.CarrinhoDeCompras" que representa um carrinho de compras online. O carrinho deve ser implementado como uma lista de itens. Cada item é representado por uma classe chamada "Item" que possui atributos como nome, preço e quantidade. Implemente os seguintes métodos:
 
 - `adicionarItem(String nome, double preco, int quantidade)`: Adiciona um item ao carrinho com o nome, preço e quantidade especificados.
 - `removerItem(String nome)`: Remove um item do carrinho com base no seu nome.
@@ -54,16 +54,16 @@ Exercícios:
 
 ----
 
-## Pesquisa em List
+## List.Pesquisa em List
 
 ### 1. Catálogo de Livros
 
 <p>Crie uma classe chamada "CatalogoLivros" que possui uma lista de objetos do tipo "Livro" como atributo. Cada livro possui atributos como título, autor e ano de publicação. Implemente os seguintes métodos:
 
 - `adicionarLivro(String titulo, String autor, int anoPublicacao)`: Adiciona um livro ao catálogo.
-- `pesquisarPorAutor(String autor)`: Pesquisa livros por autor e retorna uma lista com os livros encontrados.
-- `pesquisarPorIntervaloAnos(int anoInicial, int anoFinal)`: Pesquisa livros publicados em um determinado intervalo de anos e retorna uma lista com os livros encontrados.
-- `pesquisarPorTitulo(String titulo)`: Pesquisa livros por título e retorna o primeiro livro encontrado.
+- `pesquisarPorAutor(String autor)`: List.Pesquisa livros por autor e retorna uma lista com os livros encontrados.
+- `pesquisarPorIntervaloAnos(int anoInicial, int anoFinal)`: List.Pesquisa livros publicados em um determinado intervalo de anos e retorna uma lista com os livros encontrados.
+- `pesquisarPorTitulo(String titulo)`: List.Pesquisa livros por título e retorna o primeiro livro encontrado.
 </p>
 
 ### 2. Soma de Números
@@ -78,9 +78,9 @@ Exercícios:
 
 -------
 
-## Ordenação em List
+## List.ListaDeTarefas.Ordenação em List
 
-### 1. Ordenação de Pessoas
+### 1. List.ListaDeTarefas.Ordenação de Pessoas
 
 <p>Crie uma classe chamada "OrdenacaoPessoas" que possui uma lista de objetos do tipo "Pessoa" como atributo. Cada pessoa possui atributos como nome, idade e altura. Implemente os seguintes métodos:
 
@@ -89,7 +89,7 @@ Exercícios:
 - `ordenarPorAltura()`: Ordena as pessoas da lista por altura usando um Comparator personalizado.
 </p>
 
-### 2. Ordenação de Números
+### 2. List.ListaDeTarefas.Ordenação de Números
 
 <p>Crie uma classe chamada "OrdenacaoNumeros" que possui uma lista de números inteiros como atributo. Implemente os seguintes métodos:
 
