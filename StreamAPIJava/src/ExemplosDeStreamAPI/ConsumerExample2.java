@@ -1,7 +1,8 @@
+package ExemplosDeStreamAPI;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
-import java.util.function.Predicate;
 
 public class ConsumerExample2 {
     public static void main(String[] args) {
@@ -19,7 +20,7 @@ public class ConsumerExample2 {
 
         //lambda
         System.out.println("-----------------");
-        numeros.stream().filter(n ->  n % 2 == 0)
+        numeros.stream().filter(n -> n % 2 == 0)
         .forEach(System.out::println);
 
         // lambda
