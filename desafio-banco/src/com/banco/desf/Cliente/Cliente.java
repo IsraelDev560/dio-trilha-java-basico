@@ -1,4 +1,4 @@
-package com.banco.desf.cliente;
+package com.banco.desf.Cliente;
 
 public class Cliente {
     private String nome;

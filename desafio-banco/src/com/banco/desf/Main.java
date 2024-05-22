@@ -2,7 +2,7 @@ package com.banco.desf;
 
 import com.banco.desf.ContasBancarias.ContaCorrente;
 import com.banco.desf.ContasBancarias.ContaPoupanca;
-import com.banco.desf.cliente.Cliente;
+import com.banco.desf.Cliente.Cliente;
 
 public class Main {
     public static void main(String[] args) {

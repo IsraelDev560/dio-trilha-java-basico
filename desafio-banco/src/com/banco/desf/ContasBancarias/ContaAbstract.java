@@ -1,6 +1,6 @@
 package com.banco.desf.ContasBancarias;
 
-import com.banco.desf.cliente.Cliente;
+import com.banco.desf.Cliente.Cliente;
 
 public abstract class ContaAbstract implements Conta {
 

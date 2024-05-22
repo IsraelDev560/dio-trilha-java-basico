@@ -1,4 +1,4 @@
-package com.banco.desf.banco;
+package com.banco.desf.Banco;
 
 import com.banco.desf.ContasBancarias.ContaAbstract;
 import java.util.List;
