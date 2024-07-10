@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 @RestController
 @RequestMapping("/users")
@@ -23,6 +24,18 @@ public class UserController {
     @GetMapping("/{id}")
     public ResponseEntity<User> findById(@PathVariable Long id) {
         var user = userService.findById(id);
+        return ResponseEntity.ok(user);
+    }
+
+    @GetMapping("/users")
+    public ResponseEntity<List<User>> findAllUsers(@RequestParam(required = false) String name) {
+        List<User> users = userService.findAllUsers(name);
+        return ResponseEntity.ok(users);
+    }
+
+    @DeleteMapping("/users/{id}")
+    public ResponseEntity<User> deleteUser(@PathVariable Long id) {
+        User user = userService.deleteUser(id);
         return ResponseEntity.ok(user);
     }
 
