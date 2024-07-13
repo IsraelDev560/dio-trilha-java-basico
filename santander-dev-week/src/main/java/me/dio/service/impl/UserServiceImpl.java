@@ -40,6 +40,16 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User updateUser(Long id, User userToUpdate) {
+        User existingUser = findById(id);
+        if (existingUser == null) {
+            throw new NoSuchElementException("User not found with ID: " + id);
+        }
+        userToUpdate.setId(id);
+        return userRepository.save(userToUpdate);
+    }
+
+    @Override
     public User deleteUser(Long id) {
         User user = findById(id);
         if (user != null) {

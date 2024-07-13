@@ -1,5 +1,7 @@
 package me.dio.controller;
 
+import me.dio.model.Account;
+import me.dio.model.Card;
 import me.dio.model.User;
 import me.dio.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +33,12 @@ public class UserController {
     public ResponseEntity<List<User>> findAllUsers(@RequestParam(required = false) String name) {
         List<User> users = userService.findAllUsers(name);
         return ResponseEntity.ok(users);
+    }
+
+    @PutMapping("/users/{id}")
+    public ResponseEntity<User> updateUser(@PathVariable Long id, @RequestBody User userToUpdate) {
+        User updatedUser = userService.updateUser(id, userToUpdate);
+        return ResponseEntity.ok(updatedUser);
     }
 
     @DeleteMapping("/users/{id}")
